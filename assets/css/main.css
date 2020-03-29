@@ -128,7 +128,6 @@ p a[href$=".pdf"]:after {
     display: none; } }
 
 html {
-  cursor: none;
   background-color: #fffae7; }
 
 body {
@@ -455,7 +454,6 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: #1300FF;
-  cursor: none;
   transition-property: color;
   transition-duration: 0.1s;
   transition-delay: 0s;
