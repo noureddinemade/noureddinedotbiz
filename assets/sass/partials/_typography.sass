@@ -1,14 +1,11 @@
-h1, h2, h3
+h1
 
     position: relative
 
+    font-size: $h1
     line-height: 1.2
 
     @extend %fontHead
-
-h1
-
-    font-size: $h1
 
     // Responsive
 
@@ -28,68 +25,3 @@ h1
         position: relative
 
         color: $primary
-
-h2
-
-    font-size: $h2
-
-    // Responsive
-
-    +screen($md)
-
-        font-size: $h2 / 1.5
-
-    +screen($sm)
-
-        font-size: $h2 / 1.7
-
-a
-
-    position: relative
-    z-index: 1
-
-    font-weight: 500
-    text-decoration: none
-
-    color: $link
-
-    // cursor: none
-
-    +transition(color, .1s)
-
-//
-
-p
-
-    // Children
-
-    a
-
-        padding-bottom: 2px
-
-        border-bottom: 2px solid $link
-
-        // Special
-
-        &[href$=".pdf"]:after
-
-            content: 'PDF'
-
-            @extend %linkLabel
-
-        // States
-
-        &:hover
-
-            border-bottom-color: $text
-            color: $text
-
-            &:before
-
-                width: 0%
-
-//
-
-strong
-
-    @extend %bold

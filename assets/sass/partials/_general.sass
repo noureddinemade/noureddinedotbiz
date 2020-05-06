@@ -2,9 +2,7 @@
 
 html
 
-    // cursor: none
-
-    background-color: $outer
+    background-color: $bg
 
 body
 
@@ -14,23 +12,10 @@ body
     line-height: 1.4
 
     background-color: $bg
-    background-size: cover
     color: $text
-
-    border: 40px solid $outer
 
     @extend %font
     @extend %fontText
-
-    // Responsive
-
-    +screen($md)
-
-        border-width: 20px
-
-    +screen($sm)
-
-        border-width: 10px
 
     // Inner
 
